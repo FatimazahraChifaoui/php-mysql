@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Etudiants</title>
+<SCRIPT language="JavaScript">
+<!-- 
+function valider(){   
+ if(document.form1.nom complet.value == '' ) {   
+  alert('Veuillez remplire le champ nom');   
+  form1.nom complet.focus(); //met le curseur dans le champ demandé   
+  return false; //enpèche l'envoi du formulaire   
+ } 
+ else if(document.form1.cin.value == '' ) {   
+  alert('Veuillez remplire le champ cin');   
+  form1.cin.focus(); //met le curseur dans le champ demandé   
+  return false; //enpèche l'envoi du formulaire   
+ }
+
+ else if(document.form1.date de naissance.value == '' ) {   
+  alert('Veuillez remplire le champ date de naissance');   
+  form1.date de naissance.focus(); //met le curseur dans le champ demandé   
+  return false; //enpèche l'envoi du formulaire   
+}
+
+else if(document.form1.filiere.value == '' ) {   
+ alert('Veuillez remplire le champ filiere');   
+ form1.filiere.focus(); //met le curseur dans le champ demandé   
+ return false; //enpèche l'envoi du formulaire   
+}
+
+else if(document.form1.date d insctiption.value == '' ) {   
+ alert('Veuillez remplire le champ date d insctiption');   
+ form1.date d insctiption.focus(); //met le curseur dans le champ demandé   
+ return false; //enpèche l'envoi du formulaire   
+}
+
+else if(document.form1.niveau.value == '' ) {   
+ alert('Veuillez remplire le champ niveau');   
+ form1.niveau.focus(); //met le curseur dans le champ demandé   
+ return false; //enpèche l'envoi du formulaire   
+}
+
+else if(document.form1.modules.value == '' ) {   
+ alert('Veuillez remplire modules');   
+ form1.modules.focus(); //met le curseur dans le champ demandé   
+ return false; //enpèche l'envoi du formulaire   
+} 
+function confirmer()
+{
+var form1 = document.getElementById("form1" );
+
+	
+	return confirm ("Voulez vous confirmer l'enregistrement");
+}
+//-->
+</SCRIPT>
+</head>
+<body bgcolor="#ffffff">
+<h1 ALIGN="center">Formulaire d'inscription</h1>
+<TABLE border=2 width=25% align="center">
+<tr >
+<TD width=50% BGCOLOR="#A6CAF0">
+<form id="form1" name="form1" ACTION="ajouter.php" METHOD="POST" onsubmit="return valider()">
+<h3>Vos coordonnées</h3>
+<TABLE BORDER=0 >
+<TR><TD align=right> nom complet </TD><TD><input type="text" size="20" name="nom complet" value=""> </TD></TR>
+<TR><TD align=right> cin </TD><TD><input type="text" size="20" name="cin" value=""> </TD></TR>
+<TR><TD align=right> date de naissance</TD><TD><input type="text" size="20" name="date de naissance" value=""> </TD></TR>
+<TR><TD align=right> filére </TD><TD><input type="text" size="20" name="filiere" value=""> </TD></TR>
+<TR><TD align=right> date d inscription </TD><TD><input type="text" size="20" name="date d'inscription" value=""> </TD></TR>
+<TR><TD align=right> niveau </TD><TD><input type="text" size="20" name="niveau" value=""> </TD></TR>
+<TR><TD align=right> modules </TD><TD><input type="text" size="20" name="modules" value=""> </TD></TR>
+
+</TABLE>
+
+<center>
+<input type="submit" name="enregistrer" value="Enregistrer" onclick="return confirmer()">
+<input type="reset" name="annuler" value="Annuler">
+</center>
+</form>
+</TD></TR></TABLE>
